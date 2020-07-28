@@ -1,0 +1,13 @@
+name: 'import env from pr comment'
+author: Tummala Dhanvi <dhanvicse@gmail.com>
+description: 'Github action to import environment variables from github pull request comment'
+branding:
+  icon: 'git-pull-request'
+  color: 'blue'
+inputs:
+  GITHUB_TOKEN:
+    description: 'Github token'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
